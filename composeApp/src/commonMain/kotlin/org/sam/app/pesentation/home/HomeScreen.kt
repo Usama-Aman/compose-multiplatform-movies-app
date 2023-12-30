@@ -1,6 +1,5 @@
 package org.sam.app.pesentation.home
 
-import MovieDetailScreen
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -20,6 +19,7 @@ import cafe.adriel.voyager.navigator.LocalNavigator
 import cafe.adriel.voyager.navigator.currentOrThrow
 import org.sam.app.pesentation.home.components.MoviesListItem
 import org.sam.app.pesentation.home.components.HomeTopBar
+import org.sam.app.pesentation.movie_detail.MovieDetailScreen
 
 class HomeScreen : Screen {
     @Composable
@@ -54,21 +54,27 @@ class HomeScreen : Screen {
                     movies = popularMoviesState.movies,
                     title = "Popular",
                     isLoading = popularMoviesState.isLoading,
-                    onMovieClicked = { navigator.push(MovieDetailScreen()) }
+                    onMovieClicked = {
+                        navigator.push(MovieDetailScreen(it))
+                    }
                 )
 
                 MoviesListItem(
                     movies = nowPlayingState.movies,
                     title = "Now Playing",
                     isLoading = nowPlayingState.isLoading,
-                    onMovieClicked = { navigator.push(MovieDetailScreen()) }
+                    onMovieClicked = {
+                        navigator.push(MovieDetailScreen(it))
+                    }
                 )
 
                 MoviesListItem(
                     movies = topRatedMoviesState.movies,
                     isLoading = topRatedMoviesState.isLoading,
                     title = "Top Rated",
-                    onMovieClicked = { navigator.push(MovieDetailScreen()) }
+                    onMovieClicked = {
+                        navigator.push(MovieDetailScreen(it))
+                    }
                 )
 
             }
