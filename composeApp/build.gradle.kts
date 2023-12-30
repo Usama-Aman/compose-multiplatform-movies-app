@@ -43,17 +43,34 @@ kotlin {
         }
         commonMain.dependencies {
             implementation(compose.runtime)
+
+            @OptIn(org.jetbrains.compose.ExperimentalComposeLibrary::class)
+            implementation(compose.components.resources)
+            implementation(libs.kotlinx.coroutines.core)
+            implementation(libs.kotlinx.serialization.json)
+            implementation(libs.kotlinx.datetime)
+
+            // Koin for Dependency Injection
+            implementation(libs.koin.core)
+            // It is being used by Koin, was causing error while making iOS build
+            // (https://github.com/cashapp/sqldelight/issues/4357#issuecomment-1839905700)
+            implementation(libs.stately.common)
+
+            // Image Loader for KMM
+            implementation(libs.kamel.image)
+
+            // Logging Library
+            implementation(libs.napier)
+
+            // Moko MVVM
+            implementation(libs.moko.mvvm)
+
+            // Material
+            implementation(compose.material)
             implementation(compose.material3)
             implementation(compose.materialIconsExtended)
             @OptIn(org.jetbrains.compose.ExperimentalComposeLibrary::class)
-            implementation(compose.components.resources)
-            implementation(libs.composeImageLoader)
-            implementation(libs.napier)
-            implementation(libs.kotlinx.coroutines.core)
-            implementation(libs.moko.mvvm)
-            implementation(libs.kotlinx.serialization.json)
-            implementation(libs.kotlinx.datetime)
-            implementation(libs.koin.core)
+            implementation(compose.materialIconsExtended)
 
             // Ktor
             implementation(libs.ktor.client.core)
@@ -87,6 +104,8 @@ kotlin {
             implementation(compose.desktop.common)
             implementation(compose.desktop.currentOs)
             implementation(libs.ktor.client.okhttp)
+            implementation(libs.composeImageLoader)
+
         }
 
         jsMain.dependencies {

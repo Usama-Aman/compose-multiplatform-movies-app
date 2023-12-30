@@ -6,7 +6,7 @@ import org.sam.app.common.Constants
 data class MoviesModel(
     var adult: Boolean? = null,
     var genreIds: List<Int?>? = null,
-    var id: Int? = null,
+    var id: Int = -1,
     var originalLanguage: String? = null,
     var originalTitle: String? = null,
     var overview: String? = null,

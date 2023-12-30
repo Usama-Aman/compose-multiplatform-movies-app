@@ -1,5 +1,6 @@
 [versions]
 
+kamelImage = "0.9.1"
 kotlin = "1.9.21"
 compose = "1.5.11"
 agp = "8.2.0"
@@ -16,6 +17,7 @@ ktor = "2.3.7"
 kotlinx-serialization = "1.6.2"
 kotlinx-datetime = "0.5.0"
 koin = "3.5.3"
+statelyCommon = "2.0.5"
 
 [libraries]
 
@@ -31,6 +33,8 @@ moko-mvvm = { module = "dev.icerock.moko:mvvm-compose", version.ref = "moko-mvvm
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
 kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinx-datetime" }
 koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
+# It is being used by Koin, was causing error while making iOS build (https://github.com/cashapp/sqldelight/issues/4357#issuecomment-1839905700)
+stately-common = { module = "co.touchlab:stately-common", version.ref = "statelyCommon" }
 
 
 # Ktor
@@ -48,6 +52,9 @@ voyager-bottom-sheet-navigator = { module = "cafe.adriel.voyager:voyager-bottom-
 voyager-tab-navigator = { module = "cafe.adriel.voyager:voyager-tab-navigator", version.ref = "voyager" }
 voyager-transition = { module = "cafe.adriel.voyager:voyager-transitions", version.ref = "voyager" }
 voyager-koin = { module = "cafe.adriel.voyager:voyager-koin", version.ref = "voyager" }
+
+# Kamel Image loader
+kamel-image = { module = "media.kamel:kamel-image", version.ref = "kamelImage" }
 
 [plugins]
 

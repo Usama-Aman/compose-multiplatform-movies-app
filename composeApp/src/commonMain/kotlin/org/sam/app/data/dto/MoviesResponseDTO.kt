@@ -27,7 +27,7 @@ data class MoviesDTO(
     @SerialName("genre_ids")
     var genreIds: List<Int?>? = null,
     @SerialName("id")
-    var id: Int? = null,
+    var id: Int,
     @SerialName("original_language")
     var originalLanguage: String? = null,
     @SerialName("original_title")
