@@ -59,10 +59,10 @@ voyager-koin = { module = "cafe.adriel.voyager:voyager-koin", version.ref = "voy
 # Kamel Image loader
 kamel-image = { module = "media.kamel:kamel-image", version.ref = "kamelImage" }
 
-# For resource access
-moko-classpath =  {group = "dev.icerock.moko", name = "resources-generator", version.ref = "moko-version"}
-moko-resource = {group = "dev.icerock.moko", name = "resources", version.ref = "moko-version"}
-moko-resource-compose = {group = "dev.icerock.moko", name = "resources-compose", version.ref = "moko-version"}
+## For resource access
+#moko-classpath =  {group = "dev.icerock.moko", name = "resources-generator", version.ref = "moko-version"}
+#moko-resource = {group = "dev.icerock.moko", name = "resources", version.ref = "moko-version"}
+#moko-resource-compose = {group = "dev.icerock.moko", name = "resources-compose", version.ref = "moko-version"}
 
 
 [plugins]
@@ -72,4 +72,4 @@ compose = { id = "org.jetbrains.compose", version.ref = "compose" }
 android-application = { id = "com.android.application", version.ref = "agp" }
 buildConfig = { id = "com.github.gmazzo.buildconfig", version.ref = "buildConfig" }
 kotlinx-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
-moko-resources = { id = "dev.icerock.mobile.multiplatform-resources", version.ref = "moko-version" }
+#moko-resources = { id = "dev.icerock.mobile.multiplatform-resources", version.ref = "moko-version" }

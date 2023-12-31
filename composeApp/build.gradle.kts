@@ -1,3 +1,4 @@
+
 import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 
 plugins {
@@ -169,6 +170,22 @@ buildConfig {
 // BuildConfig configuration here.
 // https://github.com/gmazzo/gradle-buildconfig-plugin#usage-in-kts
 }
+
+//rootProject.plugins.withType(org.jetbrains.kotlin.gradle.targets.js.nodejs.NodeJsRootPlugin::class.java) {
+//    rootProject.the<org.jetbrains.kotlin.gradle.targets.js.nodejs.NodeJsRootExtension>().versions.webpackCli.version = "4.9.0"
+//}
+//
+//rootProject.plugins.withType(org.jetbrains.kotlin.gradle.targets.js.yarn.YarnPlugin::class.java) {
+//    rootProject.the<YarnRootExtension>().yarnLockMismatchReport =
+//        YarnLockMismatchReport.WARNING // NONE | FAIL
+//    rootProject.the<YarnRootExtension>().reportNewYarnLock = false // true
+//    rootProject.the<YarnRootExtension>().yarnLockAutoReplace = false // true
+//}
+
+// Fixes webpack-cli incompatibility by pinning the newest version.
+//rootProject.extensions.configure<org.jetbrains.kotlin.gradle.targets.js.nodejs.NodeJsRootExtension> {
+//    versions.webpackCli.version = "4.9.0"
+//}
 
 //dependencies {
 //    commonMainApi(libs.moko.resource)
