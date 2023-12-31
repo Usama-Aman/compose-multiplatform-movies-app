@@ -2,7 +2,6 @@ package org.sam.app.pesentation.movie_detail
 
 
 import androidx.compose.foundation.BorderStroke
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -15,6 +14,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.safeDrawingPadding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -42,7 +42,6 @@ import cafe.adriel.voyager.navigator.currentOrThrow
 import io.kamel.image.KamelImage
 import io.kamel.image.asyncPainterResource
 import io.ktor.http.Url
-import org.jetbrains.compose.resources.painterResource
 
 class MovieDetailScreen(private val movieId: Int) : Screen {
     @OptIn(ExperimentalLayoutApi::class)
@@ -61,6 +60,7 @@ class MovieDetailScreen(private val movieId: Int) : Screen {
         Box(
             modifier = Modifier
                 .fillMaxSize()
+                .safeDrawingPadding()
                 .background(Color.Black)
                 .padding(top = 50.dp)
         ) {
@@ -94,8 +94,8 @@ class MovieDetailScreen(private val movieId: Int) : Screen {
                     )
 
 //                    if (!state.movieDetail.adult)
-//                        Image(
-//                            painterResource(""),
+//                        Icon(
+//                            painter = ,
 //                            contentDescription = null,
 //                            modifier = Modifier.size(120.dp),
 //                        )

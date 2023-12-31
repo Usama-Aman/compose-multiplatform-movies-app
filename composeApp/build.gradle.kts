@@ -6,6 +6,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.buildConfig)
     alias(libs.plugins.kotlinx.serialization)
+//    alias(libs.plugins.moko.resources)
 }
 
 kotlin {
@@ -165,6 +166,17 @@ compose.experimental {
 }
 
 buildConfig {
-    // BuildConfig configuration here.
-    // https://github.com/gmazzo/gradle-buildconfig-plugin#usage-in-kts
+// BuildConfig configuration here.
+// https://github.com/gmazzo/gradle-buildconfig-plugin#usage-in-kts
 }
+
+//dependencies {
+//    commonMainApi(libs.moko.resource)
+//    commonMainApi(libs.moko.resource.compose) // for compose multiplatform
+//
+//}
+
+//multiplatformResources {
+//    multiplatformResourcesPackage = "org.sam.app" // required
+//}
+

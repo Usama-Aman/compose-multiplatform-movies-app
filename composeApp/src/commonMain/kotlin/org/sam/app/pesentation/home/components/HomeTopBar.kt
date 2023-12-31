@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.Icon
 import androidx.compose.runtime.Composable
@@ -25,14 +26,13 @@ fun HomeTopBar(
         verticalAlignment = Alignment.CenterVertically
     ) {
 
-
-//        Icon(
-//            modifier = Modifier
-//                .size(40.dp),
-//            painter = painterResource(),
-//            tint = Color.Red,
-//            contentDescription = null
-//        )
+        Icon(
+            modifier = Modifier
+                .size(40.dp),
+            imageVector = Icons.Filled.Add,
+            tint = Color.Red,
+            contentDescription = null
+        )
 
         Spacer(modifier = Modifier.weight(1f))
 
@@ -48,9 +48,3 @@ fun HomeTopBar(
     }
 
 }
-//
-//@Preview
-//@Composable
-//fun HomeTopBarPreview() {
-//    HomeTopBar()
-//}

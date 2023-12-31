@@ -3,12 +3,12 @@ package org.sam.app.pesentation.home
 
 import cafe.adriel.voyager.core.model.ScreenModel
 import cafe.adriel.voyager.core.model.screenModelScope
-import org.sam.app.domain.model.MoviesModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.update
 import org.sam.app.common.NetworkResource
+import org.sam.app.domain.model.MoviesModel
 import org.sam.app.domain.usecase.NowPlayingMoviesUseCase
 import org.sam.app.domain.usecase.PopularMoviesUseCase
 import org.sam.app.domain.usecase.TopRatedMoviesUseCase
