@@ -9,6 +9,7 @@ Welcome to the KMM Movies App, a Kotlin Multiplatform Mobile application that br
 - **[Kamel Image](https://github.com/Kamel-Media/Kamel)**: Image loading and caching to enhance the app's visual appeal.
 - **[Koin](https://insert-koin.io/docs/reference/koin-mp/kmp/)**: Lightweight dependency injection framework for clean and modular code.
 - **[Moko MVVM](https://github.com/icerockdev/moko-mvvm)**: Embrace the power of MVVM architecture in a Kotlin Multiplatform environment.
+- **[Napier](https://github.com/AAkira/Napier)**: Enhancing logging capabilities for better debugging and error tracking.
 
 ## Screenshots
 
