@@ -19,10 +19,10 @@ Welcome to the KMM Movies App, a Kotlin Multiplatform Mobile application that br
 <img src = "screenshots/Screenshot_20231231_143546.png" width ="250" /> <img src = "screenshots/Screenshot_20231231_143609.png" width ="250" />
 
 ### Desktop
-<img src = "screenshots/Screenshot 2023-12-31 at 14.36.55.png" width ="300" /> <img src = "screenshots/Screenshot 2023-12-31 at 14.37.07.png" width ="300" />
+<img src = "screenshots/Screenshot 2023-12-31 at 14.36.55.png" width ="400" /> <img src = "screenshots/Screenshot 2023-12-31 at 14.37.07.png" width ="400" />
 
 ### Browser
-<img src = "screenshots/Screenshot 2023-12-31 at 14.35.21.png" width ="300" /> <img src = "screenshots/Screenshot 2023-12-31 at 14.37.24.png" width ="300" />
+<img src = "screenshots/Screenshot 2023-12-31 at 14.35.21.png" width ="400" /> <img src = "screenshots/Screenshot 2023-12-31 at 14.37.24.png" width ="400" />
 
 
 ## Feedback
