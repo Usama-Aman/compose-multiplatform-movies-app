@@ -27,8 +27,11 @@ Welcome to the KMM Movies App, a Kotlin Multiplatform Mobile application that br
 
 
 ## Feedback
-
 Your feedback is invaluable! If you encounter any issues or have suggestions for improvement, please open an issue on the GitHub repository.
+
+> **Note**
+> It is still a work in progress
+
 
 ## License
 
