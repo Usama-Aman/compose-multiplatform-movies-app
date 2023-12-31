@@ -11,6 +11,9 @@ Welcome to the KMM Movies App, a Kotlin Multiplatform Mobile application that br
 - **[Moko MVVM](https://github.com/icerockdev/moko-mvvm)**: Embrace the power of MVVM architecture in a Kotlin Multiplatform environment.
 - **[Napier](https://github.com/AAkira/Napier)**: Enhancing logging capabilities for better debugging and error tracking.
 
+## Demo
+ **[Video Demo](https://www.linkedin.com/posts/usama-aman22_kmm-mobileappdevelopment-kotlin-activity-7147226869514362880-IPVT?utm_source=share&utm_medium=member_desktop)**
+
 ## Screenshots
 
 ### iOS
